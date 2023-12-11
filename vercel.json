@@ -6,12 +6,12 @@
     },
     "routes": [{
         "src": "/(.*)",
-        "dest": "/api/index.php"
+        "dest": "/public/index.php"
     }],
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
-        "APP_URL": "https://laravel-vercel-gvjm.vercel.app/",
+        "APP_URL": "https://vercel-2styzijcy-tan-jing-ens-projects.vercel.app/",
         "APP_KEY": "base64:kaIDTnCo9kN0Wq70kbWRft7hLnOu4fP5iMIAQbFVBM0=",
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
