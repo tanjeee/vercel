@@ -21,6 +21,4 @@ Route::middleware('auth:api')->group(function () {
 
 //post
 Route :: post('posts/create','API\PostController@create');
-Route :: post('posts/delete','API\PostController@delete');
-Route :: post('posts/update','API\PostController@update');
 Route :: post('posts','API\PostController@posts');
