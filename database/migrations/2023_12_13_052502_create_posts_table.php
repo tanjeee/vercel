@@ -11,9 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('post', function (Blueprint $table) {
-            $table->id();
+        Schema::create('posts', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->unsignedBigInteger('user_id');
+            $table->string('desc');
+            $table->string('photo')->default('');
             $table->timestamps();
+
+            $table->foreign('user_id')->references('id')
+            ->on('users')->onDelete('cascade');
         });
     }
 
